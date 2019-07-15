@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="secondary">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>dialog</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="complexProp && complexProp.length > 0">
+    <my-component name="Inigo Montoya" action="killed my father" result="die" [complexProp]="complexProp">
+    </my-component>
+  </div>
+</ion-content>

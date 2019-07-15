@@ -8,8 +8,12 @@
 
 <ion-content>
   <div class="ion-padding">
-    <my-component name="Inigo Montoya" action="killed my father" result="die"></my-component>
-    <my-component name="Ernest Hemingway" action="are a fish on my line" result="fry"></my-component>
-    <my-component name="Wilson Rawls" action="just finished 'Where the Red Fern Grows'" result="cry"></my-component>
+    <my-component name="Inigo Montoya" action="killed my father" result="die" [complexProp]="complexProp"></my-component>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="text-container" (click)="presentModal()">Click this block of text to open a modal!</div>
   </div>
 </ion-content>

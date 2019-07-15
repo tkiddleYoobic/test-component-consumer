@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { HomePage } from './home.page';
+
+import { DialogPage } from './dialog.page';
 
 @NgModule({
   imports: [
@@ -13,11 +14,11 @@ import { HomePage } from './home.page';
     RouterModule.forChild([
       {
         path: '',
-        component: HomePage
+        component: DialogPage
       }
     ])
   ],
-  declarations: [HomePage],
+  declarations: [DialogPage],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class HomePageModule { }
+export class DialogPageModule {}
